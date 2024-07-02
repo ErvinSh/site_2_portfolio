@@ -20,6 +20,9 @@ ul {
     padding: 0;
     margin: 0;
 }
+img {
+    display: block;
+}
 .container {
     max-width: 1370px;
     width: 100%;
@@ -27,6 +30,62 @@ ul {
     padding: 0 15px;
 }
 
+.navbar {
+    max-width: 1370px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.navbar_items {
+    min-height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_items_left {
+    display: flex;
+}
+.navbar_items_left ul {
+    display: flex;
+    gap: 71px;
+}
+.navbar_items_left ul li a {
+    color: #292929;
+    font-weight: 500;
+    font-size: 20px;
+}
+.navbar_img {
+    width: 80px;
+    height: 23px;
+    margin-right: 175px;
+}
+.navbar_items_right {
+    display: flex;
+    gap: 35px;
+    justify-content: baseline;
+}
+.navbar_p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
+.navbar_btn {
+    width: 184px;
+    height: 54px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+    color: #fff;
+    background-color: #01996D;
+    border: none;
+    margin-top: 6px;
+}
+
+
+/* Header */
 .header h1 {
     font-size: 65px;
     font-weight: bold;
@@ -73,7 +132,7 @@ ul {
 
 
 
-
+/* Footer */
 .footer {
     background-color: #245852;
     padding-top: 95px;
@@ -97,7 +156,52 @@ ul {
 .footer .logo {
     margin-bottom: 60px;
 }
-
+@media screen and (max-width:1120px) {
+    .navbar_items_left ul {
+        gap: 30px;
+        border-left: 1px solid #01996D;
+        border-right: 1px solid #01996D;
+    }
+    .navbar_items_left ul li:first-child {
+        padding-left: 5px;
+    }
+    .navbar_items_left ul li:last-child {
+        margin-right: 5px;
+    }
+    .navbar_img {
+        margin-right: 70px;
+    }
+}
+@media screen and (max-width:876px) {
+    .navbar_img {
+        margin-right: 40px;
+    }
+    .navbar_btn {
+        width: 120px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:876px) {
+    .navbar_items {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .navbar_items_left {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar_img {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:600px) {
+    .navbar_items_left ul {
+        flex-direction: column;
+        border: none;
+    }
+}
 @media screen and (max-width:380px) {
     .header h1 {
         font-size: 40px;
