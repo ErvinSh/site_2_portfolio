@@ -458,8 +458,8 @@ video {
     .video_btn {
         width: 160px;
         height: 44px;
-        font-size: 12px;
-        padding: 14px 14px;
+        font-size: 10px;
+        padding: 10px 10px;
     }
 }
 @media screen and (max-width:410px) {
