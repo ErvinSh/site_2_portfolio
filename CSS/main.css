@@ -459,7 +459,7 @@ video {
         width: 160px;
         height: 44px;
         font-size: 12px;
-        padding: 14px 34px;
+        padding: 14px 14px;
     }
 }
 @media screen and (max-width:410px) {
