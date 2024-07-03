@@ -23,6 +23,9 @@ ul {
 img {
     display: block;
 }
+video {
+    display: block;
+}
 .container {
     max-width: 1370px;
     width: 100%;
@@ -202,6 +205,65 @@ img {
     border-radius: 12px;
 }
 
+/* Video */
+.video {
+    background-color: #245852;
+    padding-top: 229px;
+    padding-bottom: 177px;
+}
+.conatiner_video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1506px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.video_left_grid {
+    color: #fff;
+    max-width: 580px;
+    width: 100%;
+}
+.video_h3 {
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    margin-bottom: 50px;
+}
+.video_text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 157%;
+    margin-bottom: 60px;
+}
+.video_btn {
+    border: none;
+    border-radius: 4px;
+    padding: 20px 50px;
+    width: 240px;
+    height: 65px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+    background-color: #01996d;
+    color: #fff;
+}
+.video_btn:hover {
+    background-color: #071142;
+    transform: scale(1.05);
+    opacity: 0.7;
+    transition: all 150ms linear;
+}
+.video_item {
+    max-width: 896px;
+    max-height: 516px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16.33px;
+    box-shadow: 3px 3px 2px 0 #01996d
+}
+
+
 /* Footer */
 .footer {
     background-color: #245852;
@@ -225,6 +287,25 @@ img {
 }
 .footer .logo {
     margin-bottom: 60px;
+}
+@media screen and (max-width:1520px) {
+    .video {
+        padding-top: 80px;
+    }
+    .conatiner_video {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .video_left_grid {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .video_btn {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .video_item {
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width:1420px) {
     .photos_items {
@@ -299,6 +380,23 @@ img {
     }
     .work_h2 {
         font-size: 36px;
+    }
+}
+@media screen and (max-width:500px) {
+    .video {
+        padding-bottom: 100px;
+    }
+    .video_h3 {
+        font-size: 36px;
+    }
+    .video_text {
+        font-size: 18px;
+    }
+    .video_btn {
+        width: 160px;
+        height: 44px;
+        font-size: 12px;
+        padding: 14px 34px;
     }
 }
 @media screen and (max-width:410px) {
