@@ -229,6 +229,7 @@ video {
     font-size: 50px;
     line-height: 157%;
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 .video_text {
     font-weight: 500;
@@ -261,6 +262,45 @@ video {
     height: 100%;
     border-radius: 16.33px;
     box-shadow: 3px 3px 2px 0 #01996d
+}
+/* Product */
+.product {
+    padding-top: 120px;
+    padding-bottom: 168px;
+}
+.product .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 87px;
+}
+.product_img {
+    max-width: 719px;
+    max-height: 670px;
+    width: 100%;
+    height: 100%;
+}
+.product_h3 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+    color: #424242;
+    margin-top: 0;
+}
+.product_h4 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996d;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.product_taxt {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 157%;
+    color: #484848;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 
@@ -323,6 +363,14 @@ video {
         margin-bottom: 50px;
     }
 }
+@media screen and (max-width:1240px) {
+    .product_h3 {
+        font-size: 18px;
+    }
+    .product_h4 {
+        font-size: 36px;
+    }
+}
 @media screen and (max-width:1120px) {
     .navbar_items_left ul {
         gap: 30px;
@@ -339,6 +387,21 @@ video {
         margin-right: 70px;
     }
 }
+@media screen and (max-width:910px) {
+    .product .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product_img {
+        order: 1;
+    }
+    .product_right {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .product_btn {
+        margin: 0 auto;
+    }
+}
 @media screen and (max-width:876px) {
     .navbar_items {
         flex-direction: column;
@@ -347,7 +410,7 @@ video {
     .navbar_img {
         margin-right: 40px;
     }
-    .navbar_btn {
+    .navbar .navbar_btn {
         width: 120px;
         font-size: 18px;
     }
@@ -414,6 +477,11 @@ video {
         width: 112px;
         height: 112px;
         margin-left: 15px;
+    }
+    .product_btn {
+        width: 152px;
+        height: 44px;
+        font-size: 16px;
     }
 }
 @media screen and (max-width:380px) {
