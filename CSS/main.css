@@ -69,10 +69,15 @@ img {
     gap: 35px;
     justify-content: baseline;
 }
+
 .navbar_p {
     font-weight: 400;
     font-size: 20px;
     color: #000;
+}
+.navbar_p:hover {
+    color: #01996D;
+    transition: color 150ms ease;
 }
 .navbar_btn {
     width: 184px;
@@ -169,17 +174,11 @@ img {
     line-height: 150%;
     color: #424242;
 }
-
-.photos {
-    
-}
+/* Fotos */
 .photos_items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 95px;
-}
-.photos_item {
-
 }
 .sota1 {
     padding-bottom: 253px;
@@ -190,87 +189,11 @@ img {
 .sota3 {
     margin-top: 55px;
 }
-.text_together_1 {
-    position: relative;
-    width: 33%;
-}
-.photos_item_h2_1 {
-    font-family: "Georgia", sans-serif;
-    font-weight: 400;
-    font-size: 150px;
-    line-height: 150%;
-    text-align: center;
-    color: rgba(1, 153, 109, 0.2);
-    margin-bottom: 0;
-}
-.photos_item_h4_1 {
-    font-family: "Georgia", sans-serif;
-    position: absolute;
-    bottom: 7px;
-    left: 88px;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 150%;
-    text-align: center;
-    color: #000;
-}
-.text_together_2 {
-    position: relative;
-    width: 33%;
-}
-.photos_item_h2_2 {
-    font-family: "Georgia", sans-serif;
-    font-weight: 400;
-    font-size: 150px;
-    line-height: 150%;
-    text-align: center;
-    color: rgba(1, 153, 109, 0.2);
-    margin-bottom: 0;
-}
-.photos_item_h4_2 {
-    width: 243%;
-    font-family: "Georgia", sans-serif;
-    position: absolute;
-    bottom: 5px;
-    left: 80px;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 150%;
-    text-align: center;
-    color: #000;
-}
-.text_together_3 {
-    position: relative;
-    width: 33%;
-}
-.photos_item_h2_3 {
-    font-family: "Georgia", sans-serif;
-    font-weight: 400;
-    font-size: 150px;
-    line-height: 150%;
-    text-align: center;
-    color: rgba(1, 153, 109, 0.2);
-    margin-bottom: 0;
-}
-.photos_item_h4_3 {
-    font-family: "Georgia", sans-serif;
-    position: absolute;
-    bottom: 3px;
-    left: 125px;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 150%;
-    text-align: center;
-    color: #000;
-}
 .photos_item_text {
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
     color: #424242;
-}
-.photos_together {
-    position: relative;
 }
 .photos_item_img {
     max-width: 390px;
@@ -278,8 +201,6 @@ img {
     max-width: 100%;
     border-radius: 12px;
 }
-
-
 
 /* Footer */
 .footer {
@@ -309,9 +230,6 @@ img {
     .photos_items {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-    }
-    .photos_item_h2_1 , .photos_item_h2_2 , .photos_item_h2_3 {
-        margin-top: 0;
     }
     .sota1, .sota2, .sota3 {
         margin-top: 0;  
@@ -373,6 +291,9 @@ img {
     .navbar_img {
         margin: 0 auto;
     }
+    .header p {
+        color: #071142;
+    }
     .work_grid {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -381,23 +302,20 @@ img {
     }
 }
 @media screen and (max-width:410px) {
-    .photos_item_h2_1 , .photos_item_h2_2 , .photos_item_h2_3 {
-        font-size: 75px;
+    .number_step1 {
+        width: 135px;
+        height: 112px;
+        margin-left: 15px;
     }
-    .photos_item_h4_1 , .photos_item_h4_2 , .photos_item_h4_3 {
-        font-size: 15px;
+    .number_step2 {
+        width: 196px;
+        height: 112px;
+        margin-left: 15px;
     }
-    .photos_item_h4_1 {
-        left: 67px;
-    }
-    .photos_item_h4_2 {
-        left: 0px;
-    }
-    .photos_item_h4_3 {
-        left: 70px
-    }
-    .photo_item_img {
-        
+    .number_step3 {
+        width: 112px;
+        height: 112px;
+        margin-left: 15px;
     }
 }
 @media screen and (max-width:380px) {
