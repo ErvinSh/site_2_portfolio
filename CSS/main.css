@@ -435,6 +435,9 @@ video {
     .navbar_img {
         margin: 0 auto;
     }
+    .header h1 {
+        font-size: 50px;
+    }
     .header p {
         color: #071142;
     }
